@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Animals</title>
+	<link rel="stylesheet" type="text/css" href="animals.css" />
+</head>
+
+<body>
+	<header class="col-12">
+		<nav>
+			<ul id="links">
+				<li><a href="LoginEDU.html"> Sign In </a></li>
+				<li><a href="RegisterEDU.html"> Sign Up </a></li>
+			  </ul>
+			<ul id="user_info">
+			  <li>
+				<h4 class="demo" id="letter">Animals<h4>
+			  </li>
+			 
+			  <li style="margin-left:6px;"><a class="btnn" id="btn" href="AlphabetLe.html" >Alphabet Letters</a></li>
+			 
+			  <li style="margin-left:6px;"><a class="btnn" id="btn" href="colors.html" >Colors</a></li>
+			  <li style="margin-left:6px;"><a class="btnn" id="btn" href="numbers.html" >Numbers</a></li>
+			  <li style="margin-left:6px;"><a class="btnn" id="btn" href="index.html" >Home</a></li>
+			  <li style="float:right"><a href="#" id="logout"> Logout</a></li>
+			  <li style="float:right"><a href="#" id="user"></a></li>
+			</ul>
+		  </nav>
+	</header>
+	<h2>
+		<table>
+			<!-- مكان الصورة الاولي الي بتتغير -->
+			<td>
+				<img src="./Pictures/animals.png" alt="animals" id="hel" onclick="changeimage();">
+			</td>
+		</table>
+	</h2>
+	</table>
+	<table>
+		<tr>
+			<!-- مكان الصورة الاسد والنمر -->
+			<td>
+				<img id="Lsound1" src="./Pictures/lion.jpg" alt="play button">
+				<audio id="Lsound">
+					<source src="./Sounds/lion sound.mpeg" type="audio/mpeg" controls>
+			</td>
+			<td>
+				<img id="Tsound1" src="./Pictures/tiger.jpg" alt="tiger">
+				<audio id="Tsound">
+					<source src="./Sounds/tiger sound.mpeg" type="audio/mpeg">
+			</td>
+		</tr>
+	</table>
+	<table>
+		<tr>
+			<!-- مكان الصور الحمار والحصان والحمار الوحشي -->
+			<td>
+					<img id="Dsound1" src="./Pictures/donkey.jpg" alt="donkey">
+				<audio id="Dsound">
+					<source src="./Sounds/donkey sound.mpeg" type="audio/mpeg">
+			</td>
+			<td>
+				<img id="Zsound1" src="./Pictures/zebra.jpg" alt="zebra">
+				<audio id="Zsound">
+					<source src="./Sounds/zebra sound.mpeg" type="audio/mpeg">
+			</td>
+			<td>
+				<img id="Hsound1" src="./Pictures/horse.jpg" alt="horse">
+				<audio id="Hsound">
+					<source src="./Sounds/horse sound.mpeg" type="audio/mpeg">
+			</td>
+		</tr>
+	</table>
+	<table>
+		<tr>
+			<!-- مكان الصور الفيل والمعزة -->
+			<td>
+				<img id="Gsound1" src="./Pictures/goat.jpg" alt="goat">
+				<audio id="Gsound">
+					<source src="./Sounds/goat sound.mpeg" type="audio/mpeg">
+			</td>
+			<td>
+				<img id="ELsound1" src="./Pictures/elephant.jpg" alt="elephant">
+				<audio id="ELsound">
+					<source src="./Sounds/elephant sound.mpeg" type="audio/mpeg">
+			</td>
+		</tr>
+	</table>
+	<table>
+		<tr>
+			<!-- مكان الصور الكلب والقطة والفار -->
+			<td>
+				<img id="Dosound1" src="./Pictures/dog.jpg" alt="dog">
+				<audio id="Dosound">
+					<source src="./Sounds/dog sound.mpeg" type="audio/mpeg">
+			</td>
+			<td>
+				<img id="Csound1" src="./Pictures/cat.jpg" alt="cat">
+				<audio id="Csound">
+					<source src="./Sounds/cat sound.mpeg" type="audio/mpeg">
+			</td>
+			<td>
+				<img id="Msound1" src="./Pictures/mouse.jpg" alt="mouse">
+				<audio id="Msound">
+					<source src="./Sounds/mouse sound.mpeg" type="audio/mpeg">
+			</td>
+		</tr>
+	</table>
+	<table>
+		<tr>
+			<!-- مكان الصور الثور والبقرة والخروف -->
+			<td>
+				<img id="COsound1" src="./Pictures/cow.jpg" alt="cow">
+				<audio id="COsound">
+					<source src="./Sounds/cow sound.mpeg" type="audio/mpeg">
+			</td>
+			<td>
+				<img id="SHsound1" src="./Pictures/sheep.jpg" alt="sheep">
+				<audio id="SHsound">
+					<source src="./Sounds/sheep sound.mpeg" type="audio/mpeg">
+			</td>
+			<td>
+				<img id="Busound1" src="./Pictures/bull.png" alt="bull">
+				<audio id="Busound">
+					<source src="./Sounds/Bull Sound.mp3" type="audio/mpeg">
+			</td>
+		</tr>
+	</table>
+	<table>
+		<!-- مكان الصورة الاغاني -->
+		<td>
+			<img src="./Pictures/song.jpg" alt="song">
+		</td>
+	</table>
+	<table>
+		<tr>
+			<!-- مكان الفيديو -->
+			<td>
+				<div class="video">
+					<iframe src="./videos/animals song.ogg" type="video/ogg" controls=" controls" width="100%"
+						height="200" id="video1"></iframe>
+				</div>
+				<div class="video">
+					<iframe src="./videos/animals vedio 3.ogg" type="video/ogg" controls="controls" width="100%"
+						height="200" id="video3"></iframe>
+				</div>
+			</td>
+		</tr>
+	</table>
+	<footer id="fo" class="col-12">EDU-KIDS</footer>
+	<script src="animals.js"></script>
+    <script src="UserEDU.js"></script>
+
+</body>
+
+</html>

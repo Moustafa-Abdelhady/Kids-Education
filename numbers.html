@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE NUMBER</title>
+
+    <style>
+        
+          *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          }
+          ul{
+                width: 100%;
+               list-style-type: none;
+               margin-left: 30px;
+               overflow: hidden;    
+          }
+
+          #user{
+    font-family: cursive;
+    background-color: #94bbe9;
+    color: black;
+    border-radius: 50px;
+    box-shadow: inset 0 0 0 0 #FFDDD2;
+    transition: ease-out 0.3s;
+    margin-left: 50px;
+  }
+
+  #user:hover{
+    box-shadow: inset 1600px 0 0 0 #A7D2CB;
+    cursor: pointer;
+    
+  }
+
+          .demo{
+            /* color: white; */
+            font-style: italic;
+            text-align: center;
+            margin-top: 2rem;
+          }
+         #sectionN{
+
+            width: 100%;
+            padding: 3%;
+            display: flex;
+            /* position:relative; */
+          }
+        #aside {
+        
+            width: 78%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+       
+        .imgN {
+            border-radius: 20px;
+            margin: 0 3rem 0 0;
+            width: 10rem;
+            
+        }
+
+        .hN{
+          
+            color: red;
+            
+            font-size: 3rem;
+            margin-bottom: 0;
+            margin-left: 2rem;
+            visibility: hidden;      
+        }
+        #bgcolor{
+            width: 4rem;
+            height: 2rem;
+           
+
+        }
+
+        #select{
+          /* color:red; */
+          font-size: x-large;
+          font-family: 'poppins', sans-serif;
+        }
+        
+        nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    max-width: 100%;
+    
+    background-image: linear-gradient( #B9E0FF,#DFF6FF);
+    font-family: 'poppins', sans-serif;
+  }
+ 
+  ul {
+   
+    width: 80%;
+    list-style-type: none;
+    margin-left: 30px;
+    overflow: hidden;
+  }
+  li {
+    float: left;
+  }
+  li a {
+ 
+    display: block;
+    color:black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  a:hover {
+    background-color:red;
+  }
+
+  #letter {
+        
+            font-style: italic;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #fo{
+    color:black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+    min-height: 8vh;
+    background-image: linear-gradient(  #B9E0FF,#DFF6FF);
+    font-family: 'poppins', sans-serif;
+    font-weight: bold;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+  }
+  
+    </style>
+
+</head>
+<header>
+    <nav>
+        <ul>
+          <li>
+            <h4 class="demo" id="letter"> NUMBERS<h4>
+          </li>
+          <li style="float:right;width:20%;"><a href="#" id="user" style="margin-top:6px;"></a></li>
+          <li style="float:right"><a href="#" id="logout" style="padding:5%px;"> Logout</a></li>
+        
+          <li style=""><a  href="animals.html" >Animals</a></li>
+          <li style=""><a  href="colors.html" >Colors</a></li>
+          <li style=""><a  href="AlphabetLe.html" >Alphabet</a></li>
+          <li style=""><a  href="index.html" >Home</a></li>
+          
+
+        </ul>
+        <ul id="links" style="margin-left:10%px;">
+          <li style="margin-left:10%px;float:right;"><a href="LoginEDU.html"> Sign In </a></li>
+          <li style="margin-left:10%px;float:right;"><a href="RegisterEDU.html"> Sign Up </a></li>
+        </ul>
+      </nav>
+</header>
+
+<body style="background-color: rgb(59, 181, 167);;">
+
+    <section id="sectionN">
+
+        <article id="article"> 
+            <h1  id="select">select background color: </h1> <br>
+            <input type="color" id="bgcolor" name="bgcolor" value="#E0FFFF" >
+        </article>
+       
+        <aside id="aside">
+           
+            <div  class="div1">
+                <h1 class="hN" >zero</h1>
+                <img class="imgN" src="./imgNumber/00.png"  alt="123" >
+                 <audio class="audioN" > 
+               <source src="./imgNumber/0.mpeg"></audio>
+            </div>
+
+            <div class="div1">
+                <h1 class="hN" >one</h1>
+                <img  class="imgN" src="./imgNumber/11.jpg" alt="123">
+                <audio class="audioN">
+               <source src="./imgNumber/1.mpeg" type="audio/mp3"></audio>
+            </div>
+
+            <div class="div1">
+                <h1 class="hN" >two</h1>
+                <img class="imgN" src="./imgNumber/22.jpg" id="tt" alt="123">
+               <audio class="audioN"> 
+                <source src="./imgNumber/2.mpeg"></audio>
+            </div>
+
+            <div class="div1">
+                <h1 class="hN" >three</h1>
+                 <img class="imgN" src="./imgNumber/33.png"  alt="123">
+                  <audio class="audioN">
+                  <source src="./imgNumber/3.mpeg" ></audio>
+            </div>
+
+            <div class="div1">
+                <h1 class="hN" >four</h1>
+                <img class="imgN" src="./imgNumber/44.png" id="fu" alt="123">
+                <audio  class="audioN">
+                <source src="./imgNumber/4.mpeg"></audio>
+
+            </div>
+
+            <div class="div1">
+                <h1 class="hN" >five</h1>
+                <img  class="imgN" src="./imgNumber/55.png" id="fi" alt="123">
+                <audio class="audioN"> 
+                <source src="./imgNumber/5.mpeg" ></audio>
+
+            </div>
+
+            <div class="div1">
+                <h1 class="hN" >six</h1>
+                <img class="imgN" src="./imgNumber/66.png"  alt="123">
+                <audio class="audioN"> 
+                <source src="./imgNumber/6.mpeg" ></audio>
+
+            </div>
+
+                <div class="div1" >
+                    <h1 class="hN">seven</h1>
+                    <img class="imgN" src="./imgNumber/77.png" alt="123">
+                    <audio class="audioN"> 
+                    <source src="./imgNumber/7.mpeg" ></audio>
+                </div>
+
+                <div class="div1">
+                    <h1 class="hN">eight</h1>
+                    <img class="imgN" src="./imgNumber/88.jpg" alt="123">
+                    <audio class="audioN">
+                     <source src="./imgNumber/8.mpeg" ></audio>
+                </div>
+
+                <div class="div1">
+                    <h1 class="hN" >nine</h1>
+                    <img class="imgN" src="./imgNumber/99.png" alt="123">
+                    <audio class="audioN">
+                    <source src="./imgNumber/9.mpeg"></audio>
+                </div>
+
+                <div class="div1">
+                    <h1 class="hN" >ten</h1>
+                    <img class="imgN" src="./imgNumber/100.png" alt="123">
+                    <audio class="audioN"> 
+                    <source src="./imgNumber/10.mpeg" ></audio>
+                </div>
+        </aside>
+
+    </section>
+
+    <footer id="fo" >
+        EDU-KIDS
+     
+    </footer>
+    
+
+</body>
+
+  <script>
+   var h1 = document.getElementsByClassName("hN");
+   var img = document.getElementsByClassName("imgN");
+   var audio = document.getElementsByClassName("audioN");
+   var div1=document.getElementsByClassName("div1");
+  var input=document.getElementById("bgcolor");
+   
+  var i = document.getElementById("letter");
+ 
+ i.addEventListener("mouseover",function(){
+ i.style.color="	#CA1F7B";
+ i.innerHTML="Hello kids"});
+
+ i.addEventListener("mouseout",function(){
+ i.style.color="black";
+ i.innerHTML=" NUMBERS"});
+
+
+    input.addEventListener("change",function(){
+      document.body.style.backgroundColor=input.value;
+      })
+
+
+   for (let index = 0; index < h1.length; index++)
+    {
+        img[index].addEventListener("mouseout",function(){
+        h1[index].style.visibility="hidden";  }) 
+   }
+
+
+    for (let index = 0; index < div1.length; index++)
+     {
+        div1[index].addEventListener("click",function(){
+        h1[index].style.visibility="visible";
+        audio[index].play()
+         })
+    }
+
+   
+</script>
+<script src="UserEDU.js"></script>
+</html>

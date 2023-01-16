@@ -1,0 +1,114 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+body {
+  background-image: url("./Pictures/Animal-Animal-Icon-Set.gif");
+  background-size: 100%;
+  background-attachment: fixed
+}
+
+#user{
+  font-family: cursive;
+  background-color: #94bbe9;
+  color: black;
+  border-radius: 50px;
+  box-shadow: inset 0 0 0 0 #FFDDD2;
+  transition: ease-out 0.3s;
+  margin-left: 50px;
+}
+
+#user:hover{
+  box-shadow: inset 1600px 0 0 0 #A7D2CB;
+  cursor: pointer;
+  
+}
+
+table,
+tr,
+td {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+th,
+td {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+img {
+  border-radius:30px;
+  width:250px;
+  height:120px;
+  transition-duration: 500ms;
+}
+
+img:hover {
+  transform: rotate(0) scale(1.3);
+}
+
+img:active {
+  transform: rotate(0) scale(0.7);
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  max-width: 100%;
+  background-image: linear-gradient( #f2fd7a,#9bff76);
+  font-family: 'poppins', sans-serif;
+}
+
+ul {
+  position:relative;
+  width: 80%;
+  list-style-type: none;
+  margin-left: 30px;
+  overflow: hidden;
+}
+li {
+  float: left;
+}
+li a {
+
+  display: block;
+  color: rgb(0, 0, 0);
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {
+  background-color:#a6ff90;
+}
+#letter {
+  color: rgb(0, 0, 0);
+  font-style: italic;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#fo{
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 100%;
+  min-height: 8vh;
+  background-image: linear-gradient( #9bff76 , #f2fd7a);
+  font-family: 'poppins', sans-serif;
+  font-weight: bold;
+}

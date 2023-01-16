@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>letters</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .col-1 {
+            width: 8.33%;
+        }
+
+        .col-2 {
+            width: 16.66%;
+        }
+
+        .col-3 {
+            width: 25%;
+        }
+
+        .col-4 {
+            width: 33.33%;
+        }
+
+        .col-5 {
+            width: 41.66%;
+        }
+
+        .col-6 {
+            width: 50%;
+        }
+
+        .col-7 {
+            width: 58.33%;
+        }
+
+        .col-8 {
+            width: 66.66%;
+        }
+
+        .col-9 {
+            width: 75%;
+        }
+
+        .col-10 {
+            width: 83.33%;
+        }
+
+        .col-11 {
+            width: 91.66%;
+        }
+
+        .col-12 {
+            width: 100%;
+        }
+
+        body {
+            background-image: linear-gradient(#eeaeca, #94bbe9);
+
+
+        }
+
+        #sec {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+
+justify-content: space-around;
+        }
+
+        #letter {
+            color: rgb(226, 226, 226);
+            font-style: italic;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #letter:hover{
+            box-shadow: inset 1600px 0 0 0 #eeaeca;
+          
+        }
+
+        img {
+           width: 300px;
+     
+        }
+
+      
+
+        #div2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-left: 60px;
+        }
+
+        iframe {
+            border-radius: 25px;
+            padding-bottom: 10px;
+        }
+
+        
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    max-width: 100%;
+    background-image: linear-gradient( #94bbe9,#eeaeca);
+    font-family: 'poppins', sans-serif;
+
+  }
+
+ 
+  #user{
+    font-family: cursive;
+    background-color: #94bbe9;
+    color: black;
+    border-radius: 50px;
+    box-shadow: inset 0 0 0 0 #FFDDD2;
+    transition: ease-out 0.3s;
+    margin-left: 50px;
+  }
+
+  #user:hover{
+    box-shadow: inset 1600px 0 0 0 #A7D2CB;
+    cursor: pointer;
+    
+  }
+
+  ul {
+    position: fixed;
+    width: 80%;
+    list-style-type: none;
+    margin-left: 30px;
+    overflow: hidden;
+
+  }
+
+  li {
+    float: left;
+  }
+
+  li a {
+  
+    display: block;
+    color: rgb(226, 226, 226);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  a:hover {
+    background-color:#eeaeca;
+    /* border:1px solid #222; */
+    color: #FFF;
+  }
+      
+  #fo{
+    color: rgb(226, 226, 226);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+    min-height: 8vh;
+    background-image: linear-gradient( #eeaeca,#94bbe9,rgb(76, 216, 76));
+    font-family: 'poppins', sans-serif;
+    font-weight: bold;
+
+  }
+ 
+
+    </style>
+</head>
+
+<body>
+    
+ 
+   
+
+    <section id="sec">
+        <header class="col-12">
+            <nav>
+                <ul id="links" style="cursor: pointer;">
+                    <li style="margin-left:10%px;float:right;"><a href="LoginEDU.html" > Sign In </a></li>
+                    <li style="margin-left:10%px;float:right;"><a href="RegisterEDU.html" style="cursor: pointer;"> Sign Up </a></li>
+                  </ul>
+                <ul id="user_info">
+                  <li>
+                    <h4 class="demo" id="letter">Alphabet Letters<h4>
+                  </li>
+                  
+                  <li style="margin-left:10px"><a class="btnn" id="btn" href="animals.html" >Animals</a></li>
+                  <li style="margin-left:10px"><a class="btnn" id="btn" href="colors.html" >Colors</a></li>
+                  <li style="margin-left:10px"><a class="btnn" id="btn" href="numbers.html" >Numbers</a></li>
+                  <li style="margin-left:10px"><a class="btnn" id="btn" href="index.html" >Home</a></li>
+                  <li style="margin-left:10px"><a href="#" id="logout" style="padding:5%px;margin-left:15%;">  Logout</a></li>
+                  <li><a href="#" id="user"></a></li>
+                </ul>
+              </nav>
+        </header>
+        
+   
+
+            <div >
+                <audio id="a">
+                    <source src="./audio/apple.mpeg" type="audio/mpeg">
+                </audio>
+
+                <img src="./image//A.jpg" alt="Sorry For This Error" id="aa">
+            </div>
+            <div >
+                <audio id="b">
+                    <source src="./audio/ball.mpeg" type="audio/mpeg">
+                </audio>
+                <img src="./image//B.jpg" alt="Sorry For This Error" id="bb">
+            </div>
+            <div>
+                <audio id="c">
+                    <source src="./audio/cat.mpeg" type="audio/mpeg">
+                </audio>
+                <img src="./image/C.jpg" alt="Sorry For This Error" id="cc">
+            </div>
+            <div>
+
+                <audio id="d">
+                    <source src="./audio/dog.mpeg" type="audio/mpeg">
+                </audio>
+                <img src="./image/D.jpg" alt="Sorry For This Error" id="dd">
+            </div>
+
+       
+        <!--*********************************************************8-->
+        
+
+            <div >
+                <audio id="e">
+                    <source src="./audio/elephant.mpeg" type="audio/mpeg">
+                </audio>
+
+                <img src="./image/E.jpg" alt="Sorry For This Error" id="ee">
+            </div>
+            <div >
+                <audio id="f">
+                    <source src="./audio/fish.mpeg" type="audio/mpeg">
+                </audio>
+                <img src="./image/F.jpg" alt="Sorry For This Error" id="ff">
+            </div>
+            <div >
+                <audio id="g">
+                    <source src="./audio/grapes.mpeg" type="audio/mpeg">
+                </audio>
+                <img src="./image/G.jpg" alt="Sorry For This Error" id="gg">
+            </div>
+            <div >
+
+                <audio id="h">
+                    <source src="./audio/hat.mpeg" type="audio/mpeg">
+                </audio>
+                <img src="./image/N.jpg" alt="Sorry For This Error" id="hh">
+            </div>
+
+       
+        <!--*********************************************************8-->
+
+            <div >
+                <audio id="i">
+                    <source src="./audio/ieguna.mpeg" type="audio/mpeg">
+                </audio>
+                <img src="./image/I.jpg" alt="Sorry For This Error" id="ii">
+            </div>
+            <div >
+                <audio id="j">
+                    <source src="./audio/jump.mpeg" type="audio/mpeg">
+                </audio>
+                <img src="./image/J.jpg" alt="Sorry For This Error" id="jj">
+            </div>
+            <div >
+                <audio id="k">
+                    <source src="./audio/kangaruo.mpeg" type="audio/mpeg">
+                </audio>
+                <img src="./image/K.jpg" alt="Sorry For This Error" id="kk">
+            </div>
+            <div >
+
+                <audio id="l">
+                    <source src="./audio/lion.mpeg" type="audio/mpeg">
+                </audio>
+                <img src="./image/L.jpg" alt="Sorry For This Error" id="ll">
+            </div>
+
+
+
+        <!--*********************************************************8-->
+
+            <div >
+                <audio id="m">
+                    <source src="./audio/mouse.mpeg" type="audio/mpeg">
+                </audio>
+                <img src="./image/M.jpg" alt="Sorry For This Error" id="mm">
+            </div>
+            <div >
+                <audio id="n">
+                    <source src="./audio/nose.mpeg" type="audio/mpeg">
+                </audio>
+                <img src="./image/N.jpg" alt="Sorry For This Error" id="nn">
+            </div>
+            <div >
+                <audio id="o">
+                    <source src="./audio/octups.mpeg" type="audio/mpeg">
+                </audio>
+                <img src="./image/O.jpg" alt="Sorry For This Error" id="oo">
+            </div>
+            <div >
+
+                <audio id="p">
+                    <source src="./audio/pencil.mpeg" type="audio/mpeg">
+                </audio>
+                <img src="./image/P.jpg" alt="Sorry For This Error" id="pp">
+            </div>
+
+        <!--*********************************************************8-->
+
+            <div >
+                <audio id="q">
+                    <source src="./audio/queen.mpeg" type="audio/mpeg">
+                </audio>
+                <img src="./image/Q.jpg" alt="Sorry For This Error" id="qq">
+            </div>
+            <div >
+                <audio id="r">
+                    <source src="./audio/rabit.mpeg" type="audio/mpeg">
+                </audio>
+                <img src="./image/R.jpg" alt="Sorry For This Error" id="rr">
+            </div>
+            <div >
+                <audio id="s">
+                    <source src="./audio/snake.mpeg" type="audio/mpeg">
+                </audio>
+                <img src="./image/S.jpg" alt="Sorry For This Error" id="ss">
+            </div>
+            <div >
+
+                <audio id="t">
+                    <source src="./audio/train.mpeg" type="audio/mpeg">
+                </audio>
+                <img src="./image/T.jpg" alt="Sorry For This Error" id="tt">
+            </div>
+
+       
+        <!--*********************************************************8-->
+
+            <div >
+                <audio id="u">
+                    <source src="./audio/umbrella.mpeg" type="audio/mpeg">
+                </audio>
+                <img src="./image/U.jpg" alt="Sorry For This Error" id="uu">
+            </div>
+            <div >
+                <audio id="v">
+                    <source src="./audio/vaiollin.mpeg" type="audio/mpeg">
+                </audio>
+                <img src="./image/V.jpg" alt="Sorry For This Error" id="vv">
+            </div>
+            <div >
+                <audio id="w">
+                    <source src="./audio/window.mpeg" type="audio/mpeg">
+                </audio>
+                <img src="./image/W.jpg" alt="Sorry For This Error" id="ww">
+            </div>
+            <div >
+
+                <audio id="x">
+                    <source src="./audio/box.mpeg" type="audio/mpeg">
+                </audio>
+                <img src="./image/X.jpg" alt="Sorry For This Error" id="xx">
+            </div>
+
+        
+        <!--*********************************************************8-->
+
+            <div >
+                <audio id="y">
+                    <source src="./audio/yoyo.mpeg" type="audio/mpeg">
+                </audio>
+                <img src="./image/Y.jpg" alt="Sorry For This Error" id="yy">
+            </div>
+            <div >
+                <audio id="z">
+                    <source src="./audio/zebra.mpeg" type="audio/mpeg">
+                </audio>
+                <img src="./image/Z.jpg" alt="Sorry For This Error" id="zz">
+               
+
+          
+
+            <!--*********************************************************8-->
+
+    </section>
+    <div  id="div2">
+          
+        <iframe width="700px" height="500px" src="https://www.youtube.com/embed/GQZ3YH4wwqw"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+
+</div>
+    <footer id="fo" >
+        EDU-KIDS
+      
+    </footer>
+
+
+    <script>
+        document.getElementById("aa").addEventListener('click', function () {
+            document.getElementById('a').play();
+            document.getElementById("aa").src = "./image/Red_apple.svg.png";
+            document.body.style.background = "white";
+            document.getElementById('letter').style.color = "red";
+        })
+        document.getElementById("aa").addEventListener('mouseout', function () {
+            document.getElementById('a').pause();
+            document.getElementById("aa").src = "./image/A.jpg";
+            document.body.style.background = " linear-gradient(#eeaeca,#94bbe9)";
+            document.getElementById('letter').style.color = " rgb(226, 226, 226)";
+
+        })
+        //////////////////////////////////////
+
+        document.getElementById("bb").addEventListener('click', function () {
+            document.getElementById('b').play();
+            document.getElementById("bb").src = "./image/bb.jpg";
+            document.body.style.background = "white";
+            document.getElementById('letter').style.color = "red";
+        })
+        document.getElementById("bb").addEventListener('mouseout', function () {
+            document.getElementById('b').pause();
+            document.getElementById("bb").src = "./image/B.jpg";
+            document.body.style.background = " linear-gradient(#eeaeca,#94bbe9)";
+            document.getElementById('letter').style.color = " rgb(226, 226, 226)";
+
+        })
+        //////////////////////////////////////
+
+        document.getElementById("cc").addEventListener('click', function () {
+            document.getElementById('c').play();
+            document.getElementById("cc").src = "./image/car.jpg";
+            document.body.style.background = "white";
+            document.getElementById('letter').style.color = "red";
+        })
+        document.getElementById("cc").addEventListener('mouseout', function () {
+            document.getElementById('c').pause();
+            document.getElementById("cc").src = "./image/C.jpg";
+            document.body.style.background = " linear-gradient(#eeaeca,#94bbe9)";
+            document.getElementById('letter').style.color = " rgb(226, 226, 226)";
+
+        })
+        //////////////////////////////////////
+
+        document.getElementById("dd").addEventListener('click', function () {
+            document.getElementById('d').play();
+            document.getElementById("dd").src = "./image/d.png";
+            document.body.style.background = "white";
+            document.getElementById('letter').style.color = "red";
+        })
+        document.getElementById("dd").addEventListener('mouseout', function () {
+            document.getElementById('d').pause();
+            document.getElementById("dd").src = "./image/D.jpg";
+            document.body.style.background = " linear-gradient(#eeaeca,#94bbe9)";
+            document.getElementById('letter').style.color = " rgb(226, 226, 226)";
+
+        })
+
+        //////////////////////////////////////
+
+        document.getElementById("ee").addEventListener('click', function () {
+            document.getElementById('e').play();
+            document.getElementById("ee").src = "./image/e.png";
+            document.body.style.background = "white";
+            document.getElementById('letter').style.color = "red";
+        })
+        document.getElementById("ee").addEventListener('mouseout', function () {
+            document.getElementById('e').pause();
+            document.getElementById("ee").src = "./image/E.jpg";
+            document.body.style.background = " linear-gradient(#eeaeca,#94bbe9)";
+            document.getElementById('letter').style.color = " rgb(226, 226, 226)";
+
+        })
+        //////////////////////////////////////
+
+        document.getElementById("ff").addEventListener('click', function () {
+            document.getElementById('f').play();
+            document.getElementById("ff").src = "./image/Ff.jpg";
+            document.body.style.background = "white";
+            document.getElementById('letter').style.color = "red";
+        })
+        document.getElementById("ff").addEventListener('mouseout', function () {
+            document.getElementById('f').pause();
+            document.getElementById("ff").src = "./image/F.jpg";
+            document.body.style.background = " linear-gradient(#eeaeca,#94bbe9)";
+            document.getElementById('letter').style.color = " rgb(226, 226, 226)";
+
+        })
+
+        //////////////////////////////////////
+
+        document.getElementById("gg").addEventListener('click', function () {
+            document.getElementById('g').play();
+            document.getElementById("gg").src = "./image/g.png";
+            document.body.style.background = "white";
+            document.getElementById('letter').style.color = "red";
+        })
+        document.getElementById("gg").addEventListener('mouseout', function () {
+            document.getElementById('g').pause();
+            document.getElementById("gg").src = "./image/G.jpg";
+            document.body.style.background = " linear-gradient(#eeaeca,#94bbe9)";
+            document.getElementById('letter').style.color = " rgb(226, 226, 226)";
+
+        })
+        //////////////////////////////////////
+
+        document.getElementById("hh").addEventListener('click', function () {
+            document.getElementById('h').play();
+            document.getElementById("hh").src = "./image/download.png";
+            document.body.style.background = "white";
+            document.getElementById('letter').style.color = "red";
+        })
+        document.getElementById("hh").addEventListener('mouseout', function () {
+            document.getElementById('h').pause();
+            document.getElementById("hh").src = "./image/N.jpg";
+            document.body.style.background = " linear-gradient(#eeaeca,#94bbe9)";
+            document.getElementById('letter').style.color = " rgb(226, 226, 226)";
+
+        }) //////////////////////////////////////
+
+        document.getElementById("ii").addEventListener('click', function () {
+            document.getElementById('i').play();
+            document.getElementById("ii").src = "./image/ii.jpg";
+            document.body.style.background = "white";
+            document.getElementById('letter').style.color = "red";
+        })
+        document.getElementById("ii").addEventListener('mouseout', function () {
+            document.getElementById('i').pause();
+            document.getElementById("ii").src = "./image/I.jpg";
+            document.body.style.background = " linear-gradient(#eeaeca,#94bbe9)";
+            document.getElementById('letter').style.color = " rgb(226, 226, 226)";
+
+        })
+
+        //////////////////////////////////////
+
+        document.getElementById("jj").addEventListener('click', function () {
+            document.getElementById('j').play();
+            document.getElementById("jj").src = "./image/jum.png";
+            document.body.style.background = "white";
+            document.getElementById('letter').style.color = "red";
+        })
+        document.getElementById("jj").addEventListener('mouseout', function () {
+            document.getElementById('j').pause();
+            document.getElementById("jj").src = "./image/J.jpg";
+            document.body.style.background = " linear-gradient(#eeaeca,#94bbe9)";
+            document.getElementById('letter').style.color = " rgb(226, 226, 226)";
+
+        })
+
+        //////////////////////////////////////
+
+        document.getElementById("kk").addEventListener('click', function () {
+            document.getElementById('k').play();
+            document.getElementById("kk").src = "./image/kn.jpg";
+            document.body.style.background = "white";
+            document.getElementById('letter').style.color = "red";
+        })
+        document.getElementById("kk").addEventListener('mouseout', function () {
+            document.getElementById('k').pause();
+            document.getElementById("kk").src = "./image/K.jpg";
+            document.body.style.background = " linear-gradient(#eeaeca,#94bbe9)";
+            document.getElementById('letter').style.color = " rgb(226, 226, 226)";
+
+        })
+        //////////////////////////////////////
+
+        document.getElementById("ll").addEventListener('click', function () {
+            document.getElementById('l').play();
+            document.getElementById("ll").src = "./image/li.jpg";
+            document.body.style.background = "white";
+            document.getElementById('letter').style.color = "red";
+        })
+        document.getElementById("ll").addEventListener('mouseout', function () {
+            document.getElementById('l').pause();
+            document.getElementById("ll").src = "./image/L.jpg";
+            document.body.style.background = " linear-gradient(#eeaeca,#94bbe9)";
+            document.getElementById('letter').style.color = " rgb(226, 226, 226)";
+
+        })
+
+        //////////////////////////////////////
+
+        document.getElementById("mm").addEventListener('click', function () {
+            document.getElementById('m').play();
+            document.getElementById("mm").src = "./image/m.png";
+            document.body.style.background = "white";
+            document.getElementById('letter').style.color = "red";
+        })
+        document.getElementById("mm").addEventListener('mouseout', function () {
+            document.getElementById('m').pause();
+            document.getElementById("mm").src = "./image/M.jpg";
+            document.body.style.background = " linear-gradient(#eeaeca,#94bbe9)";
+            document.getElementById('letter').style.color = " rgb(226, 226, 226)";
+
+        })
+        //////////////////////////////////////
+
+        document.getElementById("nn").addEventListener('click', function () {
+            document.getElementById('n').play();
+            document.getElementById("nn").src = "./image/n.png";
+            document.body.style.background = "white";
+            document.getElementById('letter').style.color = "red";
+        })
+        document.getElementById("nn").addEventListener('mouseout', function () {
+            document.getElementById('n').pause();
+            document.getElementById("nn").src = "./image/N.jpg";
+            document.body.style.background = " linear-gradient(#eeaeca,#94bbe9)";
+            document.getElementById('letter').style.color = " rgb(226, 226, 226)";
+
+        })
+
+        //////////////////////////////////////
+
+        document.getElementById("oo").addEventListener('click', function () {
+            document.getElementById('o').play();
+            document.getElementById("oo").src = "./image/oo.jpg";
+            document.body.style.background = "white";
+            document.getElementById('letter').style.color = "red";
+        })
+        document.getElementById("oo").addEventListener('mouseout', function () {
+            document.getElementById('o').pause();
+            document.getElementById("oo").src = "./image/O.jpg";
+            document.body.style.background = " linear-gradient(#eeaeca,#94bbe9)";
+            document.getElementById('letter').style.color = " rgb(226, 226, 226)";
+
+        })
+        //////////////////////////////////////
+
+        document.getElementById("pp").addEventListener('click', function () {
+            document.getElementById('p').play();
+            document.getElementById("pp").src = "./image/pp.jpg";
+            document.body.style.background = "white";
+            document.getElementById('letter').style.color = "red";
+        })
+        document.getElementById("pp").addEventListener('mouseout', function () {
+            document.getElementById('p').pause();
+            document.getElementById("pp").src = "./image/P.jpg";
+            document.body.style.background = " linear-gradient(#eeaeca,#94bbe9)";
+            document.getElementById('letter').style.color = " rgb(226, 226, 226)";
+
+        })
+
+        //////////////////////////////////////
+
+        document.getElementById("qq").addEventListener('click', function () {
+            document.getElementById('q').play();
+            document.getElementById("qq").src = "./image/qq.jpg";
+            document.body.style.background = "white";
+            document.getElementById('letter').style.color = "red";
+        })
+        document.getElementById("qq").addEventListener('mouseout', function () {
+            document.getElementById('q').pause();
+            document.getElementById("qq").src = "./image/Q.jpg";
+            document.body.style.background = " linear-gradient(#eeaeca,#94bbe9)";
+            document.getElementById('letter').style.color = " rgb(226, 226, 226)";
+
+        })
+        //////////////////////////////////////
+
+        document.getElementById("rr").addEventListener('click', function () {
+            document.getElementById('r').play();
+            document.getElementById("rr").src = "./image/we.jpg";
+            document.body.style.background = "white";
+            document.getElementById('letter').style.color = "red";
+        })
+        document.getElementById("rr").addEventListener('mouseout', function () {
+            document.getElementById('r').pause();
+            document.getElementById("rr").src = "./image/R.jpg";
+            document.body.style.background = " linear-gradient(#eeaeca,#94bbe9)";
+            document.getElementById('letter').style.color = " rgb(226, 226, 226)";
+
+        })  //////////////////////////////////////
+
+        document.getElementById("ss").addEventListener('click', function () {
+            document.getElementById('s').play();
+            document.getElementById("ss").src = "./image/ss.jpg";
+            document.body.style.background = "white";
+            document.getElementById('letter').style.color = "red";
+        })
+        document.getElementById("ss").addEventListener('mouseout', function () {
+            document.getElementById('s').pause();
+            document.getElementById("ss").src = "./image/S.jpg";
+            document.body.style.background = " linear-gradient(#eeaeca,#94bbe9)";
+            document.getElementById('letter').style.color = " rgb(226, 226, 226)";
+
+        })
+        //////////////////////////////////////
+
+        document.getElementById("tt").addEventListener('click', function () {
+            document.getElementById('t').play();
+            document.getElementById("tt").src = "./image/tt.png";
+            document.body.style.background = "white";
+            document.getElementById('letter').style.color = "red";
+        })
+        document.getElementById("tt").addEventListener('mouseout', function () {
+            document.getElementById('t').pause();
+            document.getElementById("tt").src = "./image/T.jpg";
+            document.body.style.background = " linear-gradient(#eeaeca,#94bbe9)";
+            document.getElementById('letter').style.color = " rgb(226, 226, 226)";
+
+        })  //////////////////////////////////////
+
+        document.getElementById("uu").addEventListener('click', function () {
+            document.getElementById('u').play();
+            document.getElementById("uu").src = "./image/uu.png";
+            document.body.style.background = "white";
+            document.getElementById('letter').style.color = "red";
+        })
+        document.getElementById("uu").addEventListener('mouseout', function () {
+            document.getElementById('u').pause();
+            document.getElementById("uu").src = "./image/U.jpg";
+            document.body.style.background = " linear-gradient(#eeaeca,#94bbe9)";
+            document.getElementById('letter').style.color = " rgb(226, 226, 226)";
+
+        })
+        //////////////////////////////////////
+
+        document.getElementById("vv").addEventListener('click', function () {
+            document.getElementById('v').play();
+            document.getElementById("vv").src = "./image/vi.jpg";
+            document.body.style.background = "white";
+            document.getElementById('letter').style.color = "red";
+        })
+        document.getElementById("vv").addEventListener('mouseout', function () {
+            document.getElementById('v').pause();
+            document.getElementById("vv").src = "./image/V.jpg";
+            document.body.style.background = " linear-gradient(#eeaeca,#94bbe9)";
+            document.getElementById('letter').style.color = " rgb(226, 226, 226)";
+
+        })  //////////////////////////////////////
+
+        document.getElementById("ww").addEventListener('click', function () {
+            document.getElementById('w').play();
+            document.getElementById("ww").src = "./image/ww.jpg";
+            document.body.style.background = "white";
+            document.getElementById('letter').style.color = "red";
+        })
+        document.getElementById("ww").addEventListener('mouseout', function () {
+            document.getElementById('w').pause();
+            document.getElementById("ww").src = "./image/W.jpg";
+            document.body.style.background = " linear-gradient(#eeaeca,#94bbe9)";
+            document.getElementById('letter').style.color = " rgb(226, 226, 226)";
+
+        })
+        //////////////////////////////////////
+
+        document.getElementById("xx").addEventListener('click', function () {
+            document.getElementById('x').play();
+            document.getElementById("xx").src = "./image/xx.png";
+            document.body.style.background = "white";
+            document.getElementById('letter').style.color = "red";
+        })
+        document.getElementById("xx").addEventListener('mouseout', function () {
+            document.getElementById('x').pause();
+            document.getElementById("xx").src = "./image/X.jpg";
+            document.body.style.background = " linear-gradient(#eeaeca,#94bbe9)";
+            document.getElementById('letter').style.color = " rgb(226, 226, 226)";
+
+        })  //////////////////////////////////////
+
+        document.getElementById("yy").addEventListener('click', function () {
+            document.getElementById('y').play();
+            document.getElementById("yy").src = "./image/yo.jpg";
+            document.body.style.background = "white";
+            document.getElementById('letter').style.color = "red";
+        })
+        document.getElementById("yy").addEventListener('mouseout', function () {
+            document.getElementById('y').pause();
+            document.getElementById("yy").src = "./image/Y.jpg";
+            document.body.style.background = " linear-gradient(#eeaeca,#94bbe9)";
+            document.getElementById('letter').style.color = " rgb(226, 226, 226)";
+
+        })
+        //////////////////////////////////////
+
+        document.getElementById("zz").addEventListener('click', function () {
+            document.getElementById('z').play();
+            document.getElementById("zz").src = "./image/z.png";
+            document.body.style.background = "white";
+            document.getElementById('letter').style.color = "red";
+        })
+        document.getElementById("zz").addEventListener('mouseout', function () {
+            document.getElementById('z').pause();
+            document.getElementById("zz").src = "./image/Z.jpg";
+            document.body.style.background = " linear-gradient(#eeaeca,#94bbe9)";
+            document.getElementById('letter').style.color = " rgb(226, 226, 226)";
+
+        })
+        ///////////////////////
+        var element = document.getElementById('letter');
+			element.addEventListener("mouseover", function () {
+				element.innerHTML = "Hello kids";
+			});
+			element.addEventListener("mouseout", function () {
+				element.innerHTML = " Alphabet Letters";
+			});
+    </script>
+    <script src="UserEDU.js"></script>
+
+</body>
+
+</html>

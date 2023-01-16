@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+          *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'poppins', sans-serif;
+            background-image: linear-gradient( #94bbe9,#eeaeca,rgb(110, 228, 110));
+        }
+        header{
+          padding: 10px 0;
+
+        }
+        .container{
+            width:80%;
+            margin: auto;
+        }
+        .header-content{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header-content .brand{
+            font-size: 32px;
+            text-decoration: none;
+            color:#eee;
+        }
+        nav ul{
+            display:flex;
+            list-style: none;
+        }
+        nav li a{
+            display: block;
+           color: #eee;
+            min-width: 50px;
+            margin:0 5px;
+            padding:5px;
+            font-weight:600;
+        }
+        nav li a:hover{
+            display: block;
+            background-color:#eeaeca;
+            padding:7px;
+        }
+        .section-form{
+            margin: 20% auto;
+            margin-left:50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         transform: translate(-50%, -50%);
+            width: 40%;
+         text-align: center;
+         background-image: linear-gradient( #d82472,#2366b3);
+             padding: 20px;
+            
+        }
+        .section-form h2{
+            /* display: block; */
+            font-size: 30px;
+            letter-spacing: 2px;
+            color: #EEE;
+            /* margin-left:20px; */
+        }
+        .div-form form input{
+            text-align: center;
+         
+            font-family: 'poppins', sans-serif;
+            width: 100%;
+            margin:5px 0;
+            margin-right:10%;
+            height: 40px;
+            padding: 5px;
+            text-transform: uppercase;
+            border: 1px solid #ddd;
+         
+        }
+        .div-form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+    .section-form form input[type="submit"] {
+    font-size: 20px;
+    text-transform: uppercase;
+    height: auto;
+    cursor: pointer;
+    }
+
+    </style>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet" />
+    <title>EDU-Kids | Login Page</title>
+
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+    <!-- <link rel="stylesheet" href="css/login.css" /> -->
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="brand"> EDU-Kids </a>
+
+                <nav>
+                    <ul>
+                        <li><a href="LoginEDU.html"> Sign In </a></li>
+                        <li><a href="RegisterEDU.html"> Sign Up </a></li>
+                       
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="section-form">
+        <div class="div-form">
+            <h2>Login User</h2>
+            <form>
+                <input type="text" placeholder="Enter Username.." id="username" />
+                <input type="password" placeholder="Enter Password.." id="password" />
+                <input type="submit" value="Sign in" id="sign_in" />
+                <span style="color:#f724f7"> Not have Account </span> <a href="RegisterEDU.html"
+                    style="color:#EEE;text-decoration:none;"> Register </a>
+            </form>
+        </div>
+    </section>
+
+    <script src="LoginEDU.js"></script>
+  
+</body>
+
+</html>
